@@ -28,7 +28,7 @@ class Main extends React.Component {
 
     render() {
          return (
-             <div>
+             <Container>
              <h1>Employee Management</h1>
              <ul>
                  {this.state.employees.map(( employee, i) => (
@@ -41,7 +41,7 @@ class Main extends React.Component {
                      </li>
                  ))}
              </ul>
-             </div>
+             </Container>
          )
     }
 }
