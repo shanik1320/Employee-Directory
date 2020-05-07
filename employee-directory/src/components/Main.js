@@ -1,6 +1,7 @@
 import React from "react";
 import API from "../utils/API";
 import Container from "../components/Container"
+import Row from "../components/Row"
 
 
 class Main extends React.Component {
@@ -30,9 +31,11 @@ class Main extends React.Component {
     render() {
          return (
              <Container>
+                <Row>
              <h1>Employee Management</h1>
              <ul>
                  {this.state.employees.map(( employee, i) => (
+                     <Row>
                      <li
                      key={i}> {employee.picture.thumbnail}
                     {employee.name.first}
@@ -40,8 +43,10 @@ class Main extends React.Component {
                      {employee.email}
                      {employee.dob.age}
                      </li>
+                     </Row>
                  ))}
              </ul>
+             </Row>
              </Container>
          )
     }
