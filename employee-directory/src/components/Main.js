@@ -1,5 +1,6 @@
 import React from "react";
 import API from "../utils/API";
+import Container from "../components/Container"
 
 
 class Main extends React.Component {
