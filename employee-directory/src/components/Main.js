@@ -29,13 +29,20 @@ class Main extends React.Component {
     render() {
          return (
              <div>
-             <h1>Main Component</h1>
+             <h1>Employee Management</h1>
              <ul>
                  {this.state.employees.map(( employee, i) => (
                      <li
-                     key={i}
-                     >{employee.name.first}</li>
+                     key={i}> 
+                    {employee.name.first}
+                     {employee.name.last}
+                     {employee.email}
+                     
+                     </li>
                  ))}
+                 {/* <li>
+                     {employee.name.last}
+                 </li> */}
              </ul>
              </div>
          )
