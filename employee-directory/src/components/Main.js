@@ -1,8 +1,8 @@
 import React from "react";
 import API from "../utils/API";
-import Container from "../components/Container"
-import Row from "../components/Row"
-
+import Container from "../components/Container";
+import Row from "../components/Row";
+// import Col from "../components/Col";
 
 class Main extends React.Component {
 
@@ -31,22 +31,32 @@ class Main extends React.Component {
     render() {
          return (
              <Container>
-                <Row>
+                {/* <Row> */}
              <h1>Employee Management</h1>
              <ul>
                  {this.state.employees.map(( employee, i) => (
-                     <Row>
+                     
                      <li
-                     key={i}> {employee.picture.thumbnail}
+                     key={i}>
+                         <Row>
+                    
+                    {employee.picture.thumbnail}
+                    
+                   
                     {employee.name.first}
+                    
                      {employee.name.last}
+                     
                      {employee.email}
+                     
                      {employee.dob.age}
-                     </li>
+                     
                      </Row>
+                     </li>
+                     
                  ))}
              </ul>
-             </Row>
+             {/* </Row> */}
              </Container>
          )
     }
