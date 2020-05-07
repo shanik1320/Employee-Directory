@@ -1,8 +1,9 @@
 import React from 'react';
+import Main from "../src/components/Main"
 
 function App() {
   return (
-    <h1>Welcome to react...</h1>
+    <Main/>
 
   );
 }
