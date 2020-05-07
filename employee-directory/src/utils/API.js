@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASEURL = "https://www.omdbapi.com/?t=";
+const BASEURL = " https://randomuser.me";
 const APIKEY = "&apikey=trilogy";
 
 export default {
