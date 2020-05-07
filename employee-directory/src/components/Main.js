@@ -1,4 +1,5 @@
 import React from "react";
+import API from "../utils/API";
 
 
 class Main extends React.Component {
@@ -8,14 +9,17 @@ class Main extends React.Component {
     }
 
     componentDidMount() {
-
+        API.getEmployees()
+        .then(data => {
+            console.log(data)
+            this.setState({
+                employees:data.data.results
+            })
+        })
+        .catch(err => console.log(err));
     };
 
-    // searchEmployees = query => {
-    //     API.search(query)
-    //     .then(res => this.setState({result: res.data}))
-    //     .catch(err => console.log(err));
-    // }
+    
 
 
 
@@ -24,7 +28,16 @@ class Main extends React.Component {
 
     render() {
          return (
+             <div>
              <h1>Main Component</h1>
+             <ul>
+                 {this.state.employees.map(( employee, i) => (
+                     <li
+                     key={i}
+                     >{employee.name.first}</li>
+                 ))}
+             </ul>
+             </div>
          )
     }
 }
