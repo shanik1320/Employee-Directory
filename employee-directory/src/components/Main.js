@@ -11,11 +11,11 @@ class Main extends React.Component {
 
     };
 
-    searchEmployees = query => {
-        API.search(query)
-        .then(res => this.setState({result: res.data}))
-        .catch(err => console.log(err));
-    }
+    // searchEmployees = query => {
+    //     API.search(query)
+    //     .then(res => this.setState({result: res.data}))
+    //     .catch(err => console.log(err));
+    // }
 
 
 
