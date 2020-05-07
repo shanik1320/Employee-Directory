@@ -33,16 +33,13 @@ class Main extends React.Component {
              <ul>
                  {this.state.employees.map(( employee, i) => (
                      <li
-                     key={i}> 
+                     key={i}> {employee.picture.thumbnail}
                     {employee.name.first}
                      {employee.name.last}
                      {employee.email}
-                     
+                     {employee.dob.age}
                      </li>
                  ))}
-                 {/* <li>
-                     {employee.name.last}
-                 </li> */}
              </ul>
              </div>
          )
