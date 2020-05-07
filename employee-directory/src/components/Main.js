@@ -22,7 +22,19 @@ class Main extends React.Component {
         .catch(err => console.log(err));
     };
 
-    
+    handleInputChange = data => {
+        // const value = event.target.value;
+        // const name = event.target.name;
+        this.setState({
+          employees: data.data.results.name.last
+        });
+      };
+
+      handleFormSubmit = event => {
+        event.preventDefault();
+        this.searchLastName(this.state.search);
+        console.log("name.last")
+      };
 
     
 
@@ -36,10 +48,13 @@ class Main extends React.Component {
              <Container>
                 {/* <Row> */}
              <h1>Employee Management</h1>
+             
              <ul>
+             <Row>
                  <SearchForm>
 
                  </SearchForm>
+                 </Row>
 
                  {this.state.employees.map(( employee, i) => (
                      
