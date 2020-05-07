@@ -3,6 +3,7 @@ import API from "../utils/API";
 import Container from "../components/Container";
 import Row from "../components/Row";
 // import Col from "../components/Col";
+import SearchForm from "../components/SearchForm"
 
 class Main extends React.Component {
 
@@ -23,6 +24,8 @@ class Main extends React.Component {
 
     
 
+    
+
 
 
 
@@ -34,6 +37,10 @@ class Main extends React.Component {
                 {/* <Row> */}
              <h1>Employee Management</h1>
              <ul>
+                 <SearchForm>
+
+                 </SearchForm>
+
                  {this.state.employees.map(( employee, i) => (
                      
                      <li
