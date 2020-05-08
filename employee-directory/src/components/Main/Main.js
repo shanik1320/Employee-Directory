@@ -4,6 +4,7 @@ import API from "../../utils/API";
 // import Row from "../components/Row";
 // import Col from "../components/Col";
 import SearchForm from "../SearchForm"
+import "./main.css";
 
 class Main extends React.Component {
 
