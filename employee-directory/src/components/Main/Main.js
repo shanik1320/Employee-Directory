@@ -1,9 +1,9 @@
 import React from "react";
-import API from "../utils/API";
+import API from "../../utils/API";
 // import Container from "../components/Container";
 // import Row from "../components/Row";
 // import Col from "../components/Col";
-import SearchForm from "../components/SearchForm"
+import SearchForm from "../SearchForm"
 
 class Main extends React.Component {
 
