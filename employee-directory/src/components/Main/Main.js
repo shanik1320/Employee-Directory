@@ -1,6 +1,6 @@
 import React from "react";
 import API from "../../utils/API";
-import Container from "../components/Container";
+// import Container from "../components/Container";
 // import Row from "../components/Row";
 // import Col from "../components/Col";
 import SearchForm from "../SearchForm"
@@ -39,16 +39,11 @@ class Main extends React.Component {
 
     
 
-
-
-
-
-
     render() {
          return (
              
-              <Container> 
-             <h1>Employee Management</h1>
+              <div> 
+             <h1 className = "title">Employee Management</h1>
              
              <ul>
              

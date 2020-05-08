@@ -1,4 +1,8 @@
 body {
     background-color: silver;
+    
+}
+.title {
+    width: 100%;
     text-align: center;
 }
