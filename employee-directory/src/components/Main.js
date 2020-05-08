@@ -1,7 +1,7 @@
 import React from "react";
 import API from "../utils/API";
-import Container from "../components/Container";
-import Row from "../components/Row";
+// import Container from "../components/Container";
+// import Row from "../components/Row";
 // import Col from "../components/Col";
 import SearchForm from "../components/SearchForm"
 
@@ -45,22 +45,22 @@ class Main extends React.Component {
 
     render() {
          return (
-             <Container>
-                {/* <Row> */}
+             
+              <div> 
              <h1>Employee Management</h1>
              
              <ul>
-             <Row>
+             
                  <SearchForm>
 
                  </SearchForm>
-                 </Row>
+                 
 
                  {this.state.employees.map(( employee, i) => (
                      
                      <li
                      key={i}>
-                         <Row>
+                         
                     
                     {employee.picture.thumbnail}
                     
@@ -73,13 +73,12 @@ class Main extends React.Component {
                      
                      {employee.dob.age}
                      
-                     </Row>
+                     
                      </li>
                      
                  ))}
              </ul>
-             {/* </Row> */}
-             </Container>
+             </div> 
          )
     }
 }
